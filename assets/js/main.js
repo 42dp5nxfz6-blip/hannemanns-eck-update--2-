@@ -30,7 +30,7 @@
      Echte Besucher sehen diese Felder nie und füllen sie nie aus.
      Bots füllen sie häufig → wir verwerfen die Anfrage lautlos. */
   function isSpam(form) {
-    var names = ['_gotcha', 'company'];
+    var names = ['_gotcha', 'website'];
     for (var i = 0; i < names.length; i++) {
       var el = form.querySelector('input[name="' + names[i] + '"]');
       if (el && el.value.trim() !== '') return true;
